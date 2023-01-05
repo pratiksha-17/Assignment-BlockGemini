@@ -26,7 +26,7 @@ const AddPost = (props) =>{
     }
 
     useEffect(()=>{
-        if(Object.keys(state.post).length){
+        if(!!state.post && Object.keys(state.post).length){
             setData(state.post)
         }
     },[])
